@@ -1,0 +1,11 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "rust",
+    "json",
+    "html",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "css"
+  ]
+}
