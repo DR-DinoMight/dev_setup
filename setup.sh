@@ -17,5 +17,7 @@ cd ~/.config/coc/extensions
 npm install coc-css coc-json coc-markdownlint coc-prettier coc-rls coc-tsserver
 cd $pwd
 
-mkdir ~/.local/bin
+mkdir -p ~/.local/bin
 cp dev_tmux.sh ~/.local/bin/start-dev
+
+export PATH="$HOME/.local/bin:$PATH"
