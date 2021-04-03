@@ -7,7 +7,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 nvm install --lts
-npm install -g yarn prettier
+npm install -g yarn prettier typescript
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 				       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
