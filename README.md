@@ -1,6 +1,6 @@
-# NeoVim config
+# dev environment config
 
-This is my NeoVim config. Feel free to use it, or not. Mostly this is here as a backup.
+This is my NeoVim and tmux config. Feel free to use it, or not. Mostly this is here as a backup.
 
 ## Pre-requisites
 
