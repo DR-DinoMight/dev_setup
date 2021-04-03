@@ -2,7 +2,7 @@
 
 This is my NeoVim config. Feel free to use it, or not. Mostly this is here as a backup.
 
-* Clone this into your home directory `git clone <repo_url> ~/`
+* Clone this repo
 * Run `./setup.sh`
 * Enjoy
 
