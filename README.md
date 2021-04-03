@@ -2,15 +2,16 @@
 
 This is my NeoVim config. Feel free to use it, or not. Mostly this is here as a backup.
 
-* Clone this repo
-* Run `./setup.sh`
-* Enjoy
-
 ## Pre-requisites
 
 * Git
-* Node & Yarn
-* Prettier
+* A nerd-font from [https://github.com/ryanoasis/nerd-fonts/releases/](ryanoasis/nerd-fonts)
+
+## How to install
+
+* Clone this repo
+* Run `./setup.sh`
+* Enjoy
 
 ## Starting dev
 
