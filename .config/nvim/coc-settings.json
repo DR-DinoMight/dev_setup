@@ -6,6 +6,9 @@
     "javascript",
     "typescript",
     "typescriptreact",
-    "css"
-  ]
+    "css",
+    "php"
+  ],
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+  "intelephense.licenceKey": "xxxxxxx"
 }
