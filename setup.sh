@@ -24,7 +24,7 @@ nvim --headless +PlugInstall +qa
 ORIGINAL_PWD=`pwd`
 mkdir -p ~/.config/coc/extensions
 cd ~/.config/coc/extensions
-npm install coc-css coc-json coc-markdownlint coc-prettier coc-rls coc-tsserver coc-phpls
+npm install coc-css coc-json coc-markdownlint coc-prettier coc-rls coc-tsserver coc-phpls coc-tabnine
 cd $(echo $ORIGINAL_PWD | tr -d '\r')
 
 mkdir -p ~/.local/bin
