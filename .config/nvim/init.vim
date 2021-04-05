@@ -25,6 +25,9 @@ nnoremap <silent><nowait> <space>g :<C-u>CocFix<cr>
 " Open NERDTree with Shift+f
 nnoremap <silent><nowait> <space>f :<C-u>NERDTreeToggle<cr>
 
+" Make gb remap to go back after a gd
+nnoremap <silent><nowait> gb :bp<cr>
+
 " Make the COC popup less horrible to look at
 highlight CocWarningFloat ctermfg=black
 highlight CocErrorFloat ctermfg=white
