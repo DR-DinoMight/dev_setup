@@ -17,7 +17,7 @@ let g:rainbow_active = 1
 call plug#end()
 
 set splitbelow            " Make Split command open below instead of above
-set tabstop=2             " Tabs are 2 spaces
+set tabstop=2 shiftwidth=2 expandtab            " Tabs are 2 spaces
 set number relativenumber " Sets lint numbers as relative
 set nu rnu                " Set current lint as absolute
 let g:NERDTreeWinPos = "right"  " Puts NERDTree on the right
