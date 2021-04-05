@@ -32,12 +32,16 @@ nnoremap <silent><nowait> <space>g :<C-u>CocFix<cr>
 " Open NERDTree with Shift+f
 nnoremap <silent><nowait> <space>f :<C-u>NERDTreeToggle<cr>
 
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nmap <silent> sv :source $MYVIMRC<CR>
 
 " Make the COC popup less horrible to look at
 highlight CocWarningFloat ctermfg=black
 highlight CocErrorFloat ctermfg=white
 highlight Pmenu ctermbg=red
+
+" remapp dd to delete to blackhole as I use V with x to cut
+nnoremap d "_d
+vnoremap d "_d
 
 " Add 'gd' command for go-to-definition
 nmap <silent> gd <Plug>(coc-definition)
