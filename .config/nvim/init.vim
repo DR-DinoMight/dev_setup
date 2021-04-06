@@ -69,7 +69,8 @@ let g:coc_snippet_prev = '<c-k>'
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " Search project
-nnoremap <silent> sp :CtrlSF<CR>
+nmap     sp :CtrlSF<space>
+nmap     <C-F>f <Plug>CtrlSFPrompt
 
 "set foldmethod=indent
 set foldmethod=syntax
