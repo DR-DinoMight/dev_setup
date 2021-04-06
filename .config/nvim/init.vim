@@ -14,7 +14,7 @@ Plug 'luochen1990/rainbow'
 Plug 'dyng/ctrlsf.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mattn/emmet-vim'
-PLug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 
 let g:rainbow_active = 1
 
