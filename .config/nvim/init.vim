@@ -11,6 +11,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'briancollins/vim-jst'
 Plug 'luochen1990/rainbow'
+Plug 'dyng/ctrlsf.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'mattn/emmet-vim'
+PLug 'terryma/vim-multiple-cursors'
 
 let g:rainbow_active = 1
 
@@ -63,5 +67,12 @@ let g:coc_snippet_prev = '<c-k>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+" Search project
+nnoremap <silent> sp :CtrlSF<CR>
+
+"set foldmethod=indent
+set foldmethod=syntax
+set nofoldenable
 
 source $HOME/.config/nvim/themes/onedark.vim
