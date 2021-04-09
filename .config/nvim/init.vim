@@ -26,7 +26,7 @@ set number relativenumber " Sets lint numbers as relative
 set nu rnu                " Set current lint as absolute
 let g:NERDTreeWinPos = "right"  " Puts NERDTree on the right
 set mouse=a 	" Adds mouse integration
-
+set clipboard+=unnamed
 " Show the errors/warnings from COC with Shift+a
 nnoremap <silent><nowait> <space>a :<C-u>CocDiagnostics<cr>
 
