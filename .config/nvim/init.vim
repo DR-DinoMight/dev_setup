@@ -15,6 +15,11 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mattn/emmet-vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 let g:rainbow_active = 1
 
@@ -25,6 +30,7 @@ set tabstop=2 shiftwidth=2 expandtab            " Tabs are 2 spaces
 set number relativenumber " Sets lint numbers as relative
 set nu rnu                " Set current lint as absolute
 let g:NERDTreeWinPos = "right"  " Puts NERDTree on the right
+let NERDTreeMapOpenInTab='\r'
 set mouse=a 	" Adds mouse integration
 set clipboard+=unnamed
 " Show the errors/warnings from COC with Shift+a
@@ -71,6 +77,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " Search project
 nmap     sp :CtrlSF<space>
 nmap     <C-F>f <Plug>CtrlSFPrompt
+nmap     fp :FZF<cr>
 
 "set foldmethod=indent
 set foldmethod=syntax
