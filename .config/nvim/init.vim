@@ -18,6 +18,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
+Plug 'editorconfig/editorconfig-vim'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
@@ -26,7 +27,7 @@ let g:rainbow_active = 1
 call plug#end()
 
 set splitbelow            " Make Split command open below instead of above
-set tabstop=2 shiftwidth=2 expandtab            " Tabs are 2 spaces
+set tabstop=4 shiftwidth=4 expandtab            " Tabs are 2 spaces
 set number relativenumber " Sets lint numbers as relative
 set nu rnu                " Set current lint as absolute
 let g:NERDTreeWinPos = "right"  " Puts NERDTree on the right
