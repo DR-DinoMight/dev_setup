@@ -10,7 +10,6 @@ Plug 'honza/vim-snippets'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'briancollins/vim-jst'
-Plug 'luochen1990/rainbow'
 Plug 'dyng/ctrlsf.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mattn/emmet-vim'
@@ -22,7 +21,6 @@ Plug 'editorconfig/editorconfig-vim'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-let g:rainbow_active = 1
 
 call plug#end()
 
@@ -31,9 +29,11 @@ set tabstop=4 shiftwidth=4 expandtab            " Tabs are 2 spaces
 set number relativenumber " Sets lint numbers as relative
 set nu rnu                " Set current lint as absolute
 let g:NERDTreeWinPos = "right"  " Puts NERDTree on the right
-let NERDTreeMapOpenInTab='\r'
+let NERDTreeAutoDeleteBuffer = 1
+
 set mouse=a 	" Adds mouse integration
 set clipboard+=unnamed
+
 " Show the errors/warnings from COC with Shift+a
 nnoremap <silent><nowait> <space>a :<C-u>CocDiagnostics<cr>
 
@@ -80,8 +80,6 @@ nmap     sp :CtrlSF<space>
 nmap     <C-F>f <Plug>CtrlSFPrompt
 nmap     fp :FZF<cr>
 
-"set foldmethod=indent
-set foldmethod=syntax
-set nofoldenable
+autocmd BufNewFile,BufRead *.eta set filetype=jsx
 
 source $HOME/.config/nvim/themes/onedark.vim
